@@ -9,4 +9,3 @@ show_pages(
         Page('pages/results.py', 'Результаты')
     ]
 )
-
