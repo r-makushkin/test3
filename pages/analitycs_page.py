@@ -16,7 +16,7 @@ st.header("""
  Графики тональности и количества постов
 """, divider='blue')
 
-df = pd.read_csv('data/posts_after_models_1801.csv')
+df = pd.read_csv('data/proceed/posts_after_models_1801.csv')
 
 # Преобразование числовых значений в текстовые
 df['predicted_class'] = df['predicted_class'].map({0: 'нейтральный', 1: 'позитивный', 2: 'негативный'})
