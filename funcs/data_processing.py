@@ -6,8 +6,10 @@ import torch
 from config import minus_words
 
 
+
 def get_data(path):
     df = pd.read_csv(path)
+    uid = path.split('/')[-1].split('.')[0]
     df_minus = pd.DataFrame()
     for word in minus_words:
         df_temp = df[df['text'].str.contains(word, case=False, na=False)]
@@ -28,12 +30,12 @@ def get_data(path):
     
     # ОПРЕДЕЛЕНИЕ ТОНАЛЬНОСТИ
 
-    device = torch.device("mps")
+    device = torch.device("cpu")
     print(device)
 
     # Загрузка модели и токенизатора
     # model_name = "MonoHime/rubert-base-cased-sentiment-new"
-    model = AutoModelForSequenceClassification.from_pretrained('models/rubert_sentiment_model').to(device)
+    model = AutoModelForSequenceClassification.from_pretrained('models').to(device)
     tokenizer = AutoTokenizer.from_pretrained('models/local_tokenizer')
 
     # Установка размера пакета (batch size)
@@ -61,7 +63,9 @@ def get_data(path):
     # Добавление предсказаний в DataFrame
     df['predicted_class'] = predicted_classes.tolist()
     
-    df.to_csv('data/proceed/res.csv', index=False)
+    df.to_csv(f'ldb/SAcompleted/{uid}.csv', index=False)
+
+
 
 
     
