@@ -1,10 +1,84 @@
-2024-01-21 00:17:42,129 - INFO - Start parsing, task uid: 5db2a0e0-e826-4718-8628-812f95cab65b
-2024-01-21 00:17:42,136 - INFO - Connecting to 149.154.167.51:443/TcpFull...
-2024-01-21 00:17:42,140 - INFO - Connection to 149.154.167.51:443/TcpFull complete!
-2024-01-21 00:17:49,365 - INFO - Disconnecting from 149.154.167.51:443/TcpFull...
-2024-01-21 00:17:49,367 - INFO - Disconnection from 149.154.167.51:443/TcpFull complete!
-2024-01-21 00:17:49,395 - INFO - Parsing complete. 5db2a0e0-e826-4718-8628-812f95cab65b
-Total time:7.266093969345093
-2024-01-21 00:17:49,395 - INFO - Start semantic analysis, task uid: 5db2a0e0-e826-4718-8628-812f95cab65b
-2024-01-21 00:18:31,418 - INFO - Semantic analysis complete. 5db2a0e0-e826-4718-8628-812f95cab65b
-Total time:42.02013063430786
+2024-01-22 01:28:40,852 - INFO - Failed to load SSL library: <class 'OSError'> (no library called "ssl" found)
+2024-01-22 01:28:40,856 - INFO - cryptg module not installed and libssl not found, falling back to (slower) Python encryption
+2024-01-22 01:28:46,750 - INFO - Start parsing, task uid: d0202336-3cbd-4939-ab7e-ab2486a00641
+2024-01-22 01:28:46,754 - INFO - Connecting to 149.154.167.51:443/TcpFull...
+2024-01-22 01:28:46,755 - INFO - Connection to 149.154.167.51:443/TcpFull complete!
+2024-01-22 01:29:00,212 - INFO - Disconnecting from 149.154.167.51:443/TcpFull...
+2024-01-22 01:29:00,213 - INFO - Disconnection from 149.154.167.51:443/TcpFull complete!
+2024-01-22 01:29:00,222 - INFO - Parsing complete. d0202336-3cbd-4939-ab7e-ab2486a00641
+Total time:13.472173929214478
+2024-01-22 01:29:00,223 - INFO - Start semantic analysis, task uid: d0202336-3cbd-4939-ab7e-ab2486a00641
+2024-01-22 01:29:00,232 - ERROR - ERROR in semantic analysis: 'text'
+2024-01-22 01:29:00,233 - INFO - d0202336-3cbd-4939-ab7e-ab2486a00641 was crashed in semantic analysis.
+2024-01-22 01:29:05,243 - INFO - Start parsing, task uid: e9f77206-9980-46d6-bcdd-495cda15c599
+2024-01-22 01:29:05,245 - INFO - Connecting to 149.154.167.51:443/TcpFull...
+2024-01-22 01:29:05,246 - INFO - Connection to 149.154.167.51:443/TcpFull complete!
+2024-01-22 01:29:24,721 - INFO - Disconnecting from 149.154.167.51:443/TcpFull...
+2024-01-22 01:29:24,722 - INFO - Disconnection from 149.154.167.51:443/TcpFull complete!
+2024-01-22 01:29:24,733 - INFO - Parsing complete. e9f77206-9980-46d6-bcdd-495cda15c599
+Total time:19.490017652511597
+2024-01-22 01:29:24,734 - INFO - Start semantic analysis, task uid: e9f77206-9980-46d6-bcdd-495cda15c599
+2024-01-22 01:29:24,748 - ERROR - ERROR in semantic analysis: 'text'
+2024-01-22 01:29:24,749 - INFO - e9f77206-9980-46d6-bcdd-495cda15c599 was crashed in semantic analysis.
+2024-01-22 01:30:54,930 - INFO - Start parsing, task uid: 99ea11a0-dc09-4e8c-ad15-2ce1edd67586
+2024-01-22 01:30:54,933 - INFO - Connecting to 149.154.167.51:443/TcpFull...
+2024-01-22 01:30:54,935 - INFO - Connection to 149.154.167.51:443/TcpFull complete!
+2024-01-22 01:31:02,387 - INFO - Disconnecting from 149.154.167.51:443/TcpFull...
+2024-01-22 01:31:02,389 - INFO - Disconnection from 149.154.167.51:443/TcpFull complete!
+2024-01-22 01:31:02,398 - INFO - Parsing complete. 99ea11a0-dc09-4e8c-ad15-2ce1edd67586
+Total time:7.466566562652588
+2024-01-22 01:31:02,398 - INFO - Start semantic analysis, task uid: 99ea11a0-dc09-4e8c-ad15-2ce1edd67586
+2024-01-22 01:31:02,480 - INFO - device: cpu
+2024-01-22 01:32:26,576 - INFO - Semantic analysis complete. 99ea11a0-dc09-4e8c-ad15-2ce1edd67586
+Total time:84.17808699607849
+2024-01-22 01:32:26,582 - INFO - Start parsing, task uid: bca2181c-5509-4873-bb89-1d25935c1ace
+2024-01-22 01:32:26,586 - INFO - Connecting to 149.154.167.51:443/TcpFull...
+2024-01-22 01:32:26,589 - INFO - Connection to 149.154.167.51:443/TcpFull complete!
+2024-01-22 01:32:34,041 - INFO - Disconnecting from 149.154.167.51:443/TcpFull...
+2024-01-22 01:32:34,043 - INFO - Disconnection from 149.154.167.51:443/TcpFull complete!
+2024-01-22 01:32:34,054 - INFO - Parsing complete. bca2181c-5509-4873-bb89-1d25935c1ace
+Total time:7.471538305282593
+2024-01-22 01:32:34,054 - INFO - Start semantic analysis, task uid: bca2181c-5509-4873-bb89-1d25935c1ace
+2024-01-22 01:32:34,160 - INFO - device: cpu
+2024-01-22 01:33:53,706 - INFO - Semantic analysis complete. bca2181c-5509-4873-bb89-1d25935c1ace
+Total time:79.65184354782104
+2024-01-22 01:33:53,714 - INFO - Start parsing, task uid: 2e782ace-324d-42c3-a12f-d201497defec
+2024-01-22 01:33:53,718 - INFO - Connecting to 149.154.167.51:443/TcpFull...
+2024-01-22 01:33:53,722 - INFO - Connection to 149.154.167.51:443/TcpFull complete!
+2024-01-22 01:34:06,758 - INFO - Disconnecting from 149.154.167.51:443/TcpFull...
+2024-01-22 01:34:06,759 - INFO - Disconnection from 149.154.167.51:443/TcpFull complete!
+2024-01-22 01:34:06,773 - INFO - Parsing complete. 2e782ace-324d-42c3-a12f-d201497defec
+Total time:13.058577299118042
+2024-01-22 01:34:06,774 - INFO - Start semantic analysis, task uid: 2e782ace-324d-42c3-a12f-d201497defec
+2024-01-22 01:34:06,792 - ERROR - ERROR in semantic analysis: 'text'
+2024-01-22 01:34:06,795 - INFO - 2e782ace-324d-42c3-a12f-d201497defec was crashed in semantic analysis.
+2024-01-22 01:34:06,808 - INFO - Start parsing, task uid: d894b534-23f2-4c50-a7a9-97ed2acc017f
+2024-01-22 01:34:06,815 - INFO - Connecting to 149.154.167.51:443/TcpFull...
+2024-01-22 01:34:06,821 - INFO - Connection to 149.154.167.51:443/TcpFull complete!
+2024-01-22 01:34:19,364 - INFO - Disconnecting from 149.154.167.51:443/TcpFull...
+2024-01-22 01:34:19,369 - INFO - Disconnection from 149.154.167.51:443/TcpFull complete!
+2024-01-22 01:34:19,383 - INFO - Parsing complete. d894b534-23f2-4c50-a7a9-97ed2acc017f
+Total time:12.574467897415161
+2024-01-22 01:34:19,384 - INFO - Start semantic analysis, task uid: d894b534-23f2-4c50-a7a9-97ed2acc017f
+2024-01-22 01:34:19,406 - ERROR - ERROR in semantic analysis: 'text'
+2024-01-22 01:34:19,408 - INFO - d894b534-23f2-4c50-a7a9-97ed2acc017f was crashed in semantic analysis.
+2024-01-22 01:34:19,417 - INFO - Start parsing, task uid: 7adfc874-94fd-46a3-8860-d89d105de4e5
+2024-01-22 01:34:19,422 - INFO - Connecting to 149.154.167.51:443/TcpFull...
+2024-01-22 01:34:19,425 - INFO - Connection to 149.154.167.51:443/TcpFull complete!
+2024-01-22 01:34:32,064 - INFO - Disconnecting from 149.154.167.51:443/TcpFull...
+2024-01-22 01:34:32,065 - INFO - Disconnection from 149.154.167.51:443/TcpFull complete!
+2024-01-22 01:34:32,075 - INFO - Parsing complete. 7adfc874-94fd-46a3-8860-d89d105de4e5
+Total time:12.656298875808716
+2024-01-22 01:34:32,076 - INFO - Start semantic analysis, task uid: 7adfc874-94fd-46a3-8860-d89d105de4e5
+2024-01-22 01:34:32,081 - ERROR - ERROR in semantic analysis: 'text'
+2024-01-22 01:34:32,083 - INFO - 7adfc874-94fd-46a3-8860-d89d105de4e5 was crashed in semantic analysis.
+2024-01-22 01:34:42,115 - INFO - Start parsing, task uid: 4f429fe6-adcb-4a7b-bcbb-071197cb8260
+2024-01-22 01:34:42,119 - INFO - Connecting to 149.154.167.51:443/TcpFull...
+2024-01-22 01:34:42,121 - INFO - Connection to 149.154.167.51:443/TcpFull complete!
+2024-01-22 01:34:42,799 - ERROR - ERROR in parsing: Nobody is using this username, or the username is unacceptable. If the latter, it must match r"[a-zA-Z][\w\d]{3,30}[a-zA-Z\d]" (caused by ResolveUsernameRequest)
+2024-01-22 01:34:42,800 - INFO - 4f429fe6-adcb-4a7b-bcbb-071197cb8260 task was crashed in parsing
+2024-01-22 02:11:41,429 - INFO - Start parsing, task uid: 7c546798-c1b8-45bc-bb18-d49ba7678a75
+2024-01-22 02:11:41,432 - INFO - Connecting to 149.154.167.51:443/TcpFull...
+2024-01-22 02:11:41,435 - INFO - Connection to 149.154.167.51:443/TcpFull complete!
+2024-01-22 02:11:47,119 - ERROR - ERROR in parsing: database is locked
+2024-01-22 02:11:47,124 - INFO - 7c546798-c1b8-45bc-bb18-d49ba7678a75 task was crashed in parsing

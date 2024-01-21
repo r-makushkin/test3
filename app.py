@@ -6,7 +6,6 @@ show_pages(
         Page('app.py', 'Главная'),
         Page('pages/user_input_page.py', 'Ввод пользовательской информации'),
         Page('pages/analitycs_page.py', 'Аналитика'),
-        Page('pages/results.py', 'Результаты'),
-        Page('pages/console.py', 'Console')
+        Page('pages/results.py', 'Результаты')
     ]
 )

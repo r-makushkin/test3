@@ -1,15 +1,17 @@
 import pandas as pd
-from transformers import AutoTokenizer, AutoModelForSequenceClassification, MBartForConditionalGeneration, MBartTokenizer
-import torch
 import re
+import logging
 import torch
+
+from transformers import AutoTokenizer, AutoModelForSequenceClassification, MBartForConditionalGeneration, MBartTokenizer
 from config import minus_words
 
-
+log_file_path = 'ldb/app.log'
+logging.basicConfig(level=logging.INFO, filename=log_file_path, filemode='w', format='%(asctime)s - %(levelname)s - %(message)s')
 
 def get_data(path):
     df = pd.read_csv(path)
-    uid = path.split('/')[-1].split('.')[0]
+    uid = path.split('/')[-1].split('.')[0]    # Читаем uid, оптимальнее не придумал
     df_minus = pd.DataFrame()
     for word in minus_words:
         df_temp = df[df['text'].str.contains(word, case=False, na=False)]
@@ -27,14 +29,13 @@ def get_data(path):
     # так как предыдущими действиями мы скорее всего удалили только ссылки, но оставили обёртки, удаляем обёртки
     df['text'] = df['text'].str.replace('<a href="', ' ')
     df = df.dropna(subset=['text'])
-    
+
     # ОПРЕДЕЛЕНИЕ ТОНАЛЬНОСТИ
 
-    device = torch.device("cpu")
-    print(device)
+    device = torch.device('cuda') if torch.cuda.is_available() else torch.device('cpu')
+    logging.info(f'device: {device}')
 
-    # Загрузка модели и токенизатора
-    # model_name = "MonoHime/rubert-base-cased-sentiment-new"
+    # Загрузка модели и токенизатора "MonoHime/rubert-base-cased-sentiment-new"
     model = AutoModelForSequenceClassification.from_pretrained('models').to(device)
     tokenizer = AutoTokenizer.from_pretrained('models/local_tokenizer')
 
@@ -44,6 +45,7 @@ def get_data(path):
     # Функция для подготовки пакетов данных
     def preprocess_texts(texts):
         return tokenizer(texts, padding=True, truncation=True, max_length=512, return_tensors="pt")
+
 
     # Инициализация массива для хранения предсказаний
     predicted_classes = torch.tensor([], dtype=torch.int64, device=device)
@@ -64,8 +66,3 @@ def get_data(path):
     df['predicted_class'] = predicted_classes.tolist()
     
     df.to_csv(f'ldb/SAcompleted/{uid}.csv', index=False)
-
-
-
-
-    
